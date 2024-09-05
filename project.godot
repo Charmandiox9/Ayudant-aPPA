@@ -1,0 +1,29 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Ayudantía PPA"
+run/main_scene="res://node_2d.tscn"
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Conexion_arduino="*res://Arduino.cs"
+
+[display]
+
+window/size/viewport_width=854
+window/size/viewport_height=480
+
+[dotnet]
+
+project/assembly_name="Ayudantía PPA"
